@@ -1,0 +1,283 @@
+h1 {
+  color: #3f3e3e;
+  margin: 0;
+  padding: 20px;
+}
+
+html, body, #root {
+  text-align: center;
+  margin: 0;
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header {
+  height: 80px;
+  background-color: #999999;
+}
+
+.pictures-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 20%;
+  margin: 10px;
+}
+.thumbnail:hover {
+  background-color: #f7f4f4;
+}
+
+.thumbnail-info {
+  display: flex;
+  padding: 5px;
+}
+
+.thumbnail-info > div  {
+  display: flex;
+  width: 67%;
+}
+
+.thumbnail-info:last-child span{
+  margin-right: auto;
+  display: flex;
+}
+
+.thumbnail-info span p {
+  font-size: 13px;
+  padding-top: 10px;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+  height: 90%;
+  box-sizing: border-box;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.modal-container {
+    position: relative;
+}
+.modal-container .modal-sm, .modal-container .modal-backdrop {
+    position: absolute;
+}
+
+.modal-picture .thumbnail-info {
+    height: 40px;
+    margin: 10px;
+}
+
+select {
+    margin-left: 10px;
+    width: 30px;
+}
+
+.login-container {
+  display: flex;
+  height: 100%;
+  background-color: #53877b;
+}
+
+.login-container .login-form, .registration-container .registration-form {
+  margin: auto;
+  padding: 40px;
+  background-color: white;
+}
+
+.registration-container .registration-form {
+  margin-top: 200px;
+  max-width: 700px;
+  width: 60%;
+}
+
+.login-container .login-form {
+  width: 40%;
+  max-width: 500px;
+}
+
+.form-group {
+  display: flex;
+}
+
+.form-group label {
+  margin: auto 15px .3rem 0;
+  width: 30%;
+  text-align: left;
+}
+
+.login-form button {
+  width: 100%
+}
+
+.login-form .form-group input{
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+}
+
+.login-form .form-control:focus{
+  box-shadow: none;
+}
+
+.login-form .input-group-text {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+  background-color: white;
+  margin-top: 1px;
+}
+
+.login-form .input-group-text i {
+  padding: 4px 3px;
+}
+
+.login-form h2 {
+  margin-bottom: 10px;
+}
+
+.submit-error {
+  width: 100%;
+  font-size: 15px;
+  padding: 3px;
+  background-color: #f4bebe;
+  margin: auto auto 20px auto;
+  border-radius: 5px;
+}
+
+.error {
+  font-size: 10px;
+  position: absolute;
+  color: red;
+  top: -10px;
+}
+
+.registration-container button {
+  width: 150px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 960px) {
+  .login-container .login-form {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .login-container .login-form {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .login-container .login-form {
+    width: 100%;
+  }
+}
+
+/*navbar style*/
+
+nav {
+  height: 70px;
+  color: white;
+}
+
+nav ul {
+  margin-left: auto;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+}
+
+nav a:hover {
+  color: #9c9b9b;
+}
+
+/*timer style*/
+.timer {
+  display: flex;
+  margin:  40px auto 40px auto;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+
+.countdown {
+  width: 300px;
+  font-size: 60px;
+  font-family: 'Digital-7';
+}
+
+/*radio button*/
+input.radio-icon {
+  visibility:hidden;
+}
+label.radio-icon {
+  cursor: pointer;
+  padding: 10px;
+  margin: 0;
+  width: 50px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  background-color: white;
+}
+
+input:checked + label{
+  background-color: #dedbdb;
+}
+
+.form-group label {
+  width: 90px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+input, select {
+  max-width: 250px;
+  margin-left: 0;
+}
+
+.call-log-container {
+  display:flex;
+  justify-content: center;
+}
+
+.callLogForm {
+  width: 400px;
+  background-color: whitesmoke;
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.disabled input, select, label {
+  pointer-events: none;
+}
+
+.submit-area {
+  width: 804px;
+  height: 80px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  background-color: whitesmoke;
+  margin: 0 auto 0 auto;
+  display: flex;
+}
