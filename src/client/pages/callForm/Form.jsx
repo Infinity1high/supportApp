@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
-import { reduxForm } from 'redux-form';
+import { reduxForm, registerField } from 'redux-form';
 
 import TextField from '../../common/TextField';
 import SelectField from '../../common/SelectField';
@@ -14,23 +14,34 @@ class Form extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      startTime: this.props.startTime ? moment(this.props.startTime).toISOString() : null,
-      endTime: this.props.endTime ? moment(this.props.endTime).toISOString() : null,
-      time: this.props.time
-    }
+    // this.state = {
+    //   startTime: this.props.time.startTime ? moment(this.props.startTime).toISOString() : null,
+    //   endTime: this.props.time.endTime ? moment(this.props.endTime).toISOString() : null,
+    //   time: this.props.time,
+    //   time1: this.props
+    // }
   }
 
-  onSubmit = (formProps) => {
-    this.props.saveCall({ ...formProps, ...this.state});
+  componentDidMount() {
+    this.props.dispatch(registerField(this.props.name, "startTime", "Field"));
+    this.props.dispatch(registerField(this.props.name, "endTimeTime", "Field"));
+    this.props.dispatch(registerField(this.props.name, "time", "Field"));
   }
+
+  // onSubmit = (formProps) => {
+  //   this.props.saveCall({ ...formProps, ...this.state});
+  // }
 
   render() {
-    const { isOldUser, className, handleSubmit } = this.props;
+    const { isOldUser, className, handleSubmit, name } = this.props;
+    console.log(this.props.time)
     const formName = isOldUser ? 'Old user' : 'New user'
     return (
       <div className={`callLogForm ${className}`}>
-        <form className={className} onSubmit={handleSubmit(this.onSubmit)} initialValues={this.state}>
+        <form className={className}
+              onSubmit={handleSubmit}
+
+        >
           {formName}
           <TextField
             label={isOldUser ? 'Customer ID' : 'Session Code'}
@@ -84,20 +95,20 @@ class Form extends Component {
   }
 }
 
-const enhancedForm = reduxForm({
-  form: 'callLogForm',
-  asyncBlurFields: []
-})
-
 export default compose(
-  connect(null, saveCall),
+  connect(null, { saveCall }),
+  connect((state, props) => ({
+    form: props.name,
+    onSubmit: (formProps) => (
+      props.saveCall({
+        ...formProps,
+        timeStart: props.time.timeStart ? moment(props.startTime).toISOString() : null,
+        timeEnd: props.time.endTime ? moment(props.endTime).toISOString() : null,
+        time: props.time.time ? props.time.time : null
+      })
+    )
+  })),
   reduxForm({
-    form: 'callLogForm',
     asyncBlurFields: []
   })
-  // connect(
-  //   state => ({
-  //     initialValues: state // pull initial values from account reducer
-  //   }),
-  // )(enhancedForm)
 )(Form);

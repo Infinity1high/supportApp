@@ -3,10 +3,10 @@ import { connect } from 'react-redux';
 import { submit } from 'redux-form';
 import { Button } from 'reactstrap';
 
-const RemoteSubmitButton = ({ dispatch, color }) => (
+const RemoteSubmitButton = ({ dispatch, color, name }) => (
   <Button
     color={color}
-    onClick={() => dispatch(submit('callLogForm'))}
+    onClick={() => dispatch(submit(name))}
   >
     Submit
   </Button>

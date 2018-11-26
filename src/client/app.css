@@ -268,7 +268,7 @@ input, select {
   opacity: 0.6;
 }
 
-.disabled input, select, label {
+.disabled input, .disabled select, .disabled label {
   pointer-events: none;
 }
 

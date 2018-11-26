@@ -91,7 +91,7 @@ export default function withTimer(WrappedComponent) {
               {stop}
             </div>
           </div>
-          <WrappedComponent {...this.props}/>
+          <WrappedComponent {...this.state} />
         </Layout>
       )
     }
