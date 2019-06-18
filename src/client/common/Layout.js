@@ -10,7 +10,7 @@ import {
 } from 'reactstrap';
 
 function Layout(props) {
-  const { children } = props
+  const { children } = props;
   return (
     <div>
       <Navbar color="dark" dark>

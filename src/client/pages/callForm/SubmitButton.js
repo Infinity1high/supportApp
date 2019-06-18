@@ -10,6 +10,6 @@ const RemoteSubmitButton = ({ dispatch, color, name }) => (
   >
     Submit
   </Button>
-)
+);
 
 export default connect()(RemoteSubmitButton);

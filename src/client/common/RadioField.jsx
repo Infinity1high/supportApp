@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import { Input } from 'reactstrap';
 
 import InputField from './InputField';
 
@@ -22,7 +21,7 @@ function RadioField(props) {
                 className={icons ? 'radio-icon' : null}
               />
               {
-                icons ? (<label htmlFor={id} className="radio-icon"><i className={`fa fa-${item.icon}`} /></label>) : value
+                icons ? <label htmlFor={id} className="radio-icon"><i className={`fa fa-${item.icon}`} /></label> : value
               }
             </Fragment>
           );

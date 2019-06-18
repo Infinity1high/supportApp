@@ -18,16 +18,30 @@ class CallForm extends Component {
     super(props);
     this.state = {
       isOldUser: true
-    }
+    };
   }
+
+    switchToOldUser = () => this.setState({isOldUser: true});
+
+    switchToNewUser = () => this.setState({isOldUser: false});
 
   render() {
     const { ...props } = this.props;
 
     return (
         <div className="call-log-container">
-          <Form time={props}  isOldUser className={this.state.isOldUser ? null : 'disabled'} name="supportForm"/>
-          <Form time={props} className={this.state.isOldUser ? 'disabled' : null} name="salesForm"/>
+          <Form onClick={this.switchToOldUser}
+            time={props}
+            isOldUser
+            className={this.state.isOldUser ? null : 'disabled'}
+            name="supportForm"
+          />
+          <Form
+              onClick={this.switchToNewUser}
+              time={props}
+              className={this.state.isOldUser ? 'disabled' : null}
+              name="salesForm"
+          />
         </div>
     );
   }

@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+
+const { Schema } = mongoose;
 // const mongoosePaginate = require('mongoose-paginate');
 
 const UserModel = require('./user');

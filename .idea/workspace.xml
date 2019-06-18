@@ -2,47 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1eccacf-7000-4b40-a884-3fde5e1845ad" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/client/common/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/common/RadioField.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/common/SelectField.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/pages/callForm/CallFormContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/pages/login/RequireAuth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/setupTests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/store/actions/CallActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/store/reducers/callReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/controllers/calls.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/models/admin_values.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/models/call_details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/common/TextField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/common/TextField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/common/requireAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/common/requireAuth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/common/RadioField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/common/RadioField.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/components/Timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/Timer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/pages/login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/login/LoginContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/pages/login/LoginContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/pages/callForm/CallForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/pages/callForm/CallForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/pages/callForm/Form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/pages/callForm/Form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/pages/callForm/SubmitButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/pages/callForm/SubmitButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/registration/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/pages/registration/Registration.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/store/actions/AuctActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/store/actions/AuctActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/store/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/store/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/controllers/authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/controllers/authentication.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/store/actions/CallActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/store/actions/CallActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/controllers/calls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/controllers/calls.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/models/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/services/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/services/passport.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,53 +23,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CallActions.js" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/store/actions/CallActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+            <state relative-caret-position="214">
+              <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/App.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/controllers/calls.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Form.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/pages/callForm/Form.jsx">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/models/call_details.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="911">
-              <caret line="106" column="15" selection-start-line="106" selection-start-column="15" selection-end-line="106" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="260">
+              <caret line="36" column="4" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6">
-              <caret line="240" lean-forward="true" selection-start-line="240" selection-end-line="240" />
+            <state relative-caret-position="525">
+              <caret line="272" column="5" lean-forward="true" selection-start-line="272" selection-start-column="5" selection-end-line="272" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/pages/login/Login.jsx">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/client/pages/callForm/Form.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="44" column="56" lean-forward="true" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
+            <state relative-caret-position="421">
+              <caret line="43" column="12" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -104,59 +71,59 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="callReducer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/store/reducers/callReducer.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/common/RadioField.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="120">
+              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CallForm.jsx" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/common/SelectField.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/pages/callForm/SubmitButton.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/components/Timer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="50" column="20" lean-forward="true" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/pages/callForm/CallForm.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="100" />
+            <state relative-caret-position="230">
+              <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <element signature="e#121#157#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Form.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/common/Form.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SubmitButton.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/pages/callForm/SubmitButton.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Timer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/components/Timer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="88" column="17" lean-forward="true" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -173,9 +140,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>edit</find>
-      <find>You mus</find>
-      <find>Slash</find>
       <find>s</find>
       <find>not a valid</find>
       <find>y</find>
@@ -203,6 +167,9 @@
       <find>v</find>
       <find>saveCall</find>
       <find>d</find>
+      <find>db</find>
+      <find>ca</find>
+      <find>poi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -231,7 +198,6 @@
         <option value="$PROJECT_DIR$/src/client/login/RequireAuth.js" />
         <option value="$PROJECT_DIR$/src/client/setupTests.js" />
         <option value="$PROJECT_DIR$/src/client/common/requireAuth.js" />
-        <option value="$PROJECT_DIR$/src/server/index.js" />
         <option value="$PROJECT_DIR$/src/server/services/passport.js" />
         <option value="$PROJECT_DIR$/src/server/models/admin_values.js" />
         <option value="$PROJECT_DIR$/src/server/models/adminValues.js" />
@@ -243,49 +209,33 @@
         <option value="$PROJECT_DIR$/src/client/common/TextField.jsx" />
         <option value="$PROJECT_DIR$/src/client/common/SelectField.jsx" />
         <option value="$PROJECT_DIR$/src/client/common/RadioInput.jsx" />
-        <option value="$PROJECT_DIR$/src/client/common/RadioField.jsx" />
         <option value="$PROJECT_DIR$/src/client/pages/registration/Registration.jsx" />
         <option value="$PROJECT_DIR$/src/client/App.js" />
         <option value="$PROJECT_DIR$/src/server/models/callDetails.js" />
         <option value="$PROJECT_DIR$/src/server/controllers/authentication.js" />
         <option value="$PROJECT_DIR$/src/server/router.js" />
-        <option value="$PROJECT_DIR$/src/server/controllers/calls.js" />
         <option value="$PROJECT_DIR$/src/server/models/call_details.js" />
         <option value="$PROJECT_DIR$/src/client/pages/callForm/Submit.js" />
         <option value="$PROJECT_DIR$/src/client/store/actions/SaveCallActions.js" />
         <option value="$PROJECT_DIR$/src/client/store/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/client/store/reducers/callReducer.js" />
         <option value="$PROJECT_DIR$/src/client/common/Layout.js" />
-        <option value="$PROJECT_DIR$/src/client/components/Timer.js" />
-        <option value="$PROJECT_DIR$/src/client/store/actions/CallActions.js" />
         <option value="$PROJECT_DIR$/src/client/pages/callForm/SubmitButton.js" />
-        <option value="$PROJECT_DIR$/src/client/pages/callForm/Form.jsx" />
+        <option value="$PROJECT_DIR$/src/server/index.js" />
+        <option value="$PROJECT_DIR$/src/server/controllers/calls.js" />
+        <option value="$PROJECT_DIR$/src/client/common/RadioField.jsx" />
         <option value="$PROJECT_DIR$/src/client/app.css" />
         <option value="$PROJECT_DIR$/src/client/pages/callForm/CallForm.jsx" />
+        <option value="$PROJECT_DIR$/src/client/store/actions/CallActions.js" />
+        <option value="$PROJECT_DIR$/src/client/components/Timer.js" />
+        <option value="$PROJECT_DIR$/src/client/pages/callForm/Form.jsx" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/package.json" />
-    </packageJsonPaths>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="63" />
-    <option name="y" value="291" />
-    <option name="width" value="1837" />
-    <option name="height" value="789" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="947" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -297,116 +247,92 @@
         <subPane>
           <expand>
             <path>
-              <item name="picture-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="picture-gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="supportApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supportApp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="picture-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="picture-gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="supportApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supportApp" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="picture-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="picture-gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="supportApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supportApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="picture-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="picture-gallery" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="picture-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="picture-gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="supportApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supportApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="picture-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="picture-gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="supportApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supportApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="picture-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="picture-gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="supportApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supportApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="picture-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="picture-gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="supportApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supportApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="callForm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="picture-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="picture-gallery" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="picture-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="picture-gallery" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="registration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="picture-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="picture-gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="supportApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supportApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="picture-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="picture-gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="supportApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supportApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
               <item name="actions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="picture-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="picture-gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="supportApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supportApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="picture-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="picture-gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="supportApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supportApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="picture-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="picture-gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="supportApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supportApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="picture-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="picture-gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="supportApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supportApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="picture-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="picture-gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="supportApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supportApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
@@ -418,8 +344,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../solastis2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -482,41 +409,39 @@
       <workItem from="1540466552088" duration="104000" />
       <workItem from="1542708860856" duration="77761000" />
       <workItem from="1542986534867" duration="14043000" />
+      <workItem from="1560857177268" duration="8543000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="283337000" />
+    <option name="totallyTimeSpent" value="291880000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="63" y="25" width="1857" height="1055" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1680" height="947" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27862597" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3188668" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="GraphQL" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Run" order="1" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.23572938" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="5" visible="true" weight="0.23572938" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="1" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.28752643" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.37894738" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -535,100 +460,9 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/client/pages/callForm/SubmitButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/pages/callForm/CallForm.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#121#157#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/setupTests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/utils/validation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -643,24 +477,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/services/passport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/models/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -698,59 +518,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/common/SelectField.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/common/RadioField.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/server/controllers/authentication.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/controllers/calls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/models/call_details.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/models/admin_values.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -818,13 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/store/actions/AuctActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -842,33 +606,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/pages/callForm/SubmitButton.js">
+    <entry file="file://$PROJECT_DIR$/src/client/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        <state relative-caret-position="195">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/components/Timer.js">
+    <entry file="file://$PROJECT_DIR$/src/client/pages/login/Login.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="88" column="17" lean-forward="true" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+        <state relative-caret-position="525">
+          <caret line="44" column="56" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/App.js">
+    <entry file="file://$PROJECT_DIR$/src/client/store/reducers/callReducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -882,10 +643,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/pages/login/Login.jsx">
+    <entry file="file://$PROJECT_DIR$/src/server/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="44" column="56" lean-forward="true" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/models/admin_values.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/models/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/services/passport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/pages/callForm/CallFormContainer.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/store/actions/AuctActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/common/RadioField.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/common/SelectField.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/pages/callForm/SubmitButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/models/call_details.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="272" column="5" lean-forward="true" selection-start-line="272" selection-start-column="5" selection-end-line="272" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/controllers/calls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/Timer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="50" column="20" lean-forward="true" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -894,42 +755,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/store/actions/CallActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/pages/callForm/Form.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="911">
-          <caret line="106" column="15" selection-start-line="106" selection-start-column="15" selection-end-line="106" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="240" lean-forward="true" selection-start-line="240" selection-end-line="240" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/store/reducers/callReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="214">
+          <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/pages/callForm/CallForm.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="100" />
+        <state relative-caret-position="230">
+          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
             <element signature="e#121#157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/pages/callForm/Form.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="43" column="12" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

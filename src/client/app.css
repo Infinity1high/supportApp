@@ -268,9 +268,9 @@ input, select {
   opacity: 0.6;
 }
 
-.disabled input, .disabled select, .disabled label {
-  pointer-events: none;
-}
+/*.disabled input, .disabled select, .disabled label {*/
+/*  pointer-events: none;*/
+/*}*/
 
 .submit-area {
   width: 804px;

@@ -3,15 +3,16 @@ import { connect } from 'react-redux';
 
 export default (ChildComponent) => {
   class ComposedComponent extends Component {
-
     componentDidMount() {
       this.logOut();
     }
+
     componentDidUpdate() {
       this.logOut();
     }
+
     logOut() {
-      if(this.props.auth) {
+      if (this.props.auth) {
         this.props.history.push('/');
       }
     }

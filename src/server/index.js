@@ -9,7 +9,7 @@ const router = require('./router');
 
 const app = express();
 
-mongoose.connect('mongodb://localhost/auth', {
+mongoose.connect('mongodb://diana:235412Dd@ds139167.mlab.com:39167/call_list', {
   useNewUrlParser: true,
   useCreateIndex: true
 });
