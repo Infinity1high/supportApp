@@ -32,7 +32,14 @@ class callRepository {
   }
 
   static getAllCalls(req, res, next) {
-
+    Call.find({}, {cutomer_id, time_start, email, platform, client_type}, (err, doc) =>  {
+      if(err) {
+        res.send(400)
+      } else {
+        res.send(200)
+        console.log(doc)
+      }
+    })
 
   }
 }
@@ -73,3 +80,5 @@ exports.get_all_calls = function (req, res, next) {
 exports.remove_call = function (req, res, next) {
 
 };
+
+exports.callRepositoty = callRepository;
