@@ -3,6 +3,38 @@ const Call = require('../models/call_details');
 
 class callRepository {
 
+  static addCall (req, res, next) {
+    const data = req.body;
+    console.log(data);
+
+    const call = new Call(data);
+    call.save((err) => {
+      if (err) {
+        return next(err);
+      }
+      res.send(201);
+    });
+  };
+
+  static editCall (req, res, next) {
+    const data = req.body;
+
+    // const call = new Call(data);
+    // call.save(err => {
+    //   if (err) {
+    //     return next(err);
+    //   }
+    // });
+  };
+
+  static getCall(req, res, next) {
+    Call.findOne()
+  }
+
+  static getAllCalls(req, res, next) {
+
+
+  }
 }
 
 exports.add_call = function (req, res, next) {
