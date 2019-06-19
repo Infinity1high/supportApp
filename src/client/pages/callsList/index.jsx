@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import Layout from '../../common/Layout';
 import {getAllCalls} from "../../store/actions/GetCallsAction";
 
-const renderCalls = (calls) => calls.map(call=>
+const renderCalls = (calls, openModal, removeCall) => calls.map(call=>
    <tr style={{height: 50}}>
      <th>{call.customer_id}</th>
      <th>{call.email}</th>
@@ -13,15 +13,16 @@ const renderCalls = (calls) => calls.map(call=>
      <th>{call.call_reason}</th>
      <th>{call.date}</th>
      <th>{call.time_duration}</th>
+     <th style={{cursor: 'pointer'}} onClick={() => removeCall(call.id)}><i className="fa fa-trash" /></th>
   </tr>)
 
 
-const renderPagination = (totalCalls, navigate) => {
+const renderPagination = (totalCalls, refetchCalls) => {
   const pages = Math.ceil(totalCalls/20);
   const displayedPages = pages > 5 ? 5 : pages;
   return [...Array(displayedPages)].map((page, index) =>
         <PaginationItem>
-            <PaginationLink onClick={() => navigate({search: `?page=${index+1}`})}>
+            <PaginationLink onClick={() => refetchCalls(index+1)}>
                 {index+1}
             </PaginationLink>
         </PaginationItem>
@@ -30,19 +31,23 @@ const renderPagination = (totalCalls, navigate) => {
 
 class CallListPage extends Component {
 
-    state = {
-        page: this.props.location.search.split('=')[1] || 1
-    }
-
   componentDidMount() {
-      this.props.getAllCalls(this.props);
+      const page = this.props.location.search.split('=')[1] || 1
+      this.props.getAllCalls(page);
+  }
+
+  refetchCalls = (page) => {
+      this.props.history.push({search: `?page=${page}`})
+      this.props.getAllCalls(page);
   }
 
     render() {
-        const page = this.props.location.search.split('=')[1] || 1
+      const {location} = this.props;
+      let params = new URLSearchParams(location.search);
+        const page = location.search.split('=')[1] || 1
         return (
             <Layout>
-              <Table style={{marginTop: 20}} striped key={page}>
+              <Table style={{marginTop: 20}} striped key={params}>
                 <thead>
                 <tr>
                   <th>Id</th>
@@ -51,6 +56,7 @@ class CallListPage extends Component {
                   <th>Reason</th>
                   <th>Date</th>
                   <th>Duration of call</th>
+                  <th>Remove call</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -59,7 +65,7 @@ class CallListPage extends Component {
               </Table>
                 {this.props.result && this.props.result.totalItems && this.props.result.totalItems > 20 &&
                     <Pagination size="sm" aria-label="Page navigation example">
-                        {renderPagination(this.props.result.totalItems, this.props.history.push)}
+                        {renderPagination(this.props.result.totalItems, this.refetchCalls)}
                     </Pagination>
                 }
             </Layout>

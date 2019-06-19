@@ -18,5 +18,6 @@ module.exports = function (app) {
   app.post('/signin', requireSignin, Authentication.signin);
   app.post('/signup', urlencodedParser, Authentication.signup);
   app.post('/call_add', urlencodedParser, callRepository.addCall);
-  app.get('/calls', callRepository.getAllCalls);
+  app.get('/calls', callRepository.getCalls);
+
 };
