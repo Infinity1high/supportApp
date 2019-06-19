@@ -10,6 +10,8 @@ export default function (state = initState, action) {
     case GET_CALLS:
       return {
         ...state,
+        calls: action.payload.list,
+        totalItems: action.payload.totalItems,
       };
     case GET_CALLS_ERROR:
       return {

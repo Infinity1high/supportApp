@@ -27,20 +27,18 @@ class callRepository {
     // });
   };
 
-  static getCall(req, res, next) {
-    Call.findOne()
-  }
+  // static getCall(req, res, next) {
+  //   Call.findOne()
+  // }
 
-  static getAllCalls(req, res, next) {
-    Call.find({}, {cutomer_id, time_start, email, platform, client_type}, (err, doc) =>  {
-      if(err) {
-        res.send(400)
-      } else {
-        res.send(200)
-        console.log(doc)
-      }
-    })
-
+  static getAllCalls(req, res) {
+    const page = req.query && req.query.page && (req.query.page * 20 - 20);
+    Call.find({}).limit(20).skip(page || 0)
+        .then(async documents => {
+          const totalItems = await Call.count({});
+          res.send({list: documents, totalItems})
+        })
+        .catch(err => res.send(err));
   }
 }
 
@@ -81,4 +79,4 @@ exports.remove_call = function (req, res, next) {
 
 };
 
-exports.callRepositoty = callRepository;
+module.exports = callRepository;
