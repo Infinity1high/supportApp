@@ -1,9 +1,9 @@
-import { combineReducers } from 'redux';
-import { reducer as formReducer } from 'redux-form';
+import { combineReducers } from "redux";
+import { reducer as formReducer } from "redux-form";
 
-import AuthReducer from './auth';
-import CallReducer from './callReducer';
-import GetCallReducer from './callsListReducer';
+import AuthReducer from "./auth";
+import CallReducer from "./callReducer";
+import GetCallReducer from "./callsListReducer";
 
 const reducers = combineReducers({
   AuthReducer,

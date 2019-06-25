@@ -1,27 +1,26 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const { Schema } = mongoose;
 // const mongoosePaginate = require('mongoose-paginate');
 
-const UserModel = require('./user');
+const UserModel = require("./user");
 
 const callDetailsSchema = Schema({
-
   client_type: {
-    type: String,
+    type: String
   },
   time_start: {
-    type: Date,
+    type: Date
   },
   time_end: {
-    type: Date,
+    type: Date
   },
   time_duration: {
-    type: String,
+    type: String
   },
   operator: {
     type: Schema.Types.ObjectId,
-    ref: 'user',
+    ref: "user"
   },
   department: {
     type: String
@@ -66,6 +65,6 @@ const callDetailsSchema = Schema({
 
 // callInfoSchema.plugin(mongoosePaginate);
 
-const CallDetailsModel = mongoose.model('callDetails', callDetailsSchema);
+const CallDetailsModel = mongoose.model("callDetails", callDetailsSchema);
 
 module.exports = CallDetailsModel;

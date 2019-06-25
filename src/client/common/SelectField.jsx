@@ -1,7 +1,7 @@
-import React from 'react';
-import { Input } from 'reactstrap';
+import React from "react";
+import { Input } from "reactstrap";
 
-import InputField from './InputField';
+import InputField from "./InputField";
 
 function SelectField(props) {
   const { options, disabled, input } = props;
@@ -14,9 +14,9 @@ function SelectField(props) {
       disabled={disabled}
       onChange={input.onChange}
     >
-      {
-        options.map(option => <option value={option}>{option}</option>)
-      }
+      {options.map(option => (
+        <option value={option}>{option}</option>
+      ))}
     </Input>
   );
 }

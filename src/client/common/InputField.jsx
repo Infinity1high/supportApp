@@ -1,23 +1,23 @@
-import React from 'react';
-import { FormGroup, Label, Input } from 'reactstrap'
-import { Field } from 'redux-form'
+import React from "react";
+import { FormGroup, Label, Input } from "reactstrap";
+import { Field } from "redux-form";
 
 function BaseField(props) {
   return (
     <FormGroup className={props.className}>
-      { props.label && (
-      <Label>
-        { props.label }
-        { props.required && <b className={'control-asterisk'}>*</b>}
-      </Label>
+      {props.label && (
+        <Label>
+          {props.label}
+          {props.required && <b className={"control-asterisk"}>*</b>}
+        </Label>
       )}
-      { props.meta.touched && props.meta.error &&
+      {props.meta.touched && props.meta.error && (
         <span className="error">{props.meta.error}</span>
-      }
-     <props.inputComponent {...props} />
+      )}
+      <props.inputComponent {...props} />
     </FormGroup>
-    )
-  }
+  );
+}
 
 export default function(Component) {
   return function(props) {
@@ -27,7 +27,7 @@ export default function(Component) {
         name={props.name}
         component={BaseField}
         inputComponent={Component}
-       />
-    )
-  }
+      />
+    );
+  };
 }

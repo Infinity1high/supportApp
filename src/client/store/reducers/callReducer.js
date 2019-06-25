@@ -1,14 +1,14 @@
-import { SAVE_CALL, SAVE_CALL_ERROR } from '../actions/CallActions';
+import { SAVE_CALL, SAVE_CALL_ERROR } from "../actions/CallActions";
 
 const initState = {
-  errorMessage: ''
+  errorMessage: ""
 };
 
-export default function (state = initState, action) {
+export default function(state = initState, action) {
   switch (action.type) {
     case SAVE_CALL:
       return {
-        ...state,
+        ...state
       };
     case SAVE_CALL_ERROR:
       return {

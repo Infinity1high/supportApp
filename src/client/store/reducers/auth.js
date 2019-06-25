@@ -1,11 +1,11 @@
-import { CHANGE_AUTH, AUTH_USER, AUTH_ERROR } from '../actions/AuctActions';
+import { CHANGE_AUTH, AUTH_USER, AUTH_ERROR } from "../actions/AuctActions";
 
 const initState = {
-  authenticated: '',
-  errorMessage: ''
+  authenticated: "",
+  errorMessage: ""
 };
 
-export default function (state = initState, action) {
+export default function(state = initState, action) {
   switch (action.type) {
     case AUTH_USER:
       return {

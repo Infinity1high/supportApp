@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const adminValueSchema = mongoose.Schema({
   sales_reasons: {
@@ -18,6 +18,6 @@ const adminValueSchema = mongoose.Schema({
   }
 });
 
-const AdminValuesModel = mongoose.model('adminValues', adminValueSchema);
+const AdminValuesModel = mongoose.model("adminValues", adminValueSchema);
 
 module.exports = AdminValuesModel;

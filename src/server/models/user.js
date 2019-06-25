@@ -1,18 +1,18 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const { Schema } = mongoose;
-const bcrypt = require('bcrypt-nodejs');
+const bcrypt = require("bcrypt-nodejs");
 
 const userSchema = new Schema({
   email: {
     type: String,
     unique: true,
     lowercase: true,
-    trim: true,
+    trim: true
   },
   password: {
     type: String,
-    trim: true,
+    trim: true
   },
   name: {
     firstName: {
@@ -24,20 +24,21 @@ const userSchema = new Schema({
       type: String,
       // required: true,
       trim: true
-    },
+    }
   },
   department: {
     type: String,
     trim: true
   },
-  calls: [{
-    type: Schema.Types.ObjectId,
-    ref: 'callDetails'
-  }]
+  calls: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "callDetails"
+    }
+  ]
 });
 
-
-userSchema.pre('save', function (next) {
+userSchema.pre("save", function(next) {
   const user = this;
   console.log(user);
   bcrypt.genSalt(10, (err, salt) => {
@@ -56,7 +57,7 @@ userSchema.pre('save', function (next) {
   });
 });
 
-userSchema.methods.comparePassword = function (candidatePassword, callback) {
+userSchema.methods.comparePassword = function(candidatePassword, callback) {
   console.log(candidatePassword, this.password);
   bcrypt.compare(candidatePassword, this.password, (err, isMatch) => {
     if (err) {
@@ -66,6 +67,6 @@ userSchema.methods.comparePassword = function (candidatePassword, callback) {
   });
 };
 
-const UserModel = mongoose.model('user', userSchema);
+const UserModel = mongoose.model("user", userSchema);
 
 module.exports = UserModel;

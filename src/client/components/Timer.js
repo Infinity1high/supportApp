@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import moment from 'moment';
-import { Button } from 'reactstrap';
-import parseMs from 'parse-ms';
+import React, { Component } from "react";
+import moment from "moment";
+import { Button } from "reactstrap";
+import parseMs from "parse-ms";
 
-import Layout from '../common/Layout';
+import Layout from "../common/Layout";
 
 function parseTimer(time) {
   if (time < 10) {
@@ -11,7 +11,6 @@ function parseTimer(time) {
   }
   return time;
 }
-
 
 export default function withTimer(WrappedComponent) {
   return class Timer extends Component {
@@ -21,7 +20,7 @@ export default function withTimer(WrappedComponent) {
         startTime: null,
         endTime: null,
         time: 0,
-        isOn: false,
+        isOn: false
       };
     }
 
@@ -29,27 +28,32 @@ export default function withTimer(WrappedComponent) {
       this.setState({
         isOn: true,
         time: this.state.time,
-        startTime: Date.now() - this.state.time,
+        startTime: Date.now() - this.state.time
       });
-      this.timer = setInterval(() => this.setState({
-        time: Date.now() - this.state.startTime
-      }), 1);
-    }
+      this.timer = setInterval(
+        () =>
+          this.setState({
+            time: Date.now() - this.state.startTime
+          }),
+        1
+      );
+    };
 
     stopTimer = () => {
       this.setState({
         isOn: false,
-        endTime: Date.now(),
+        endTime: Date.now()
       });
       clearInterval(this.timer);
-    }
+    };
 
-    resetTimer = () => this.setState({
-      startTime: null,
-      endTime: null,
-      time: 0,
-      isOn: false
-    })
+    resetTimer = () =>
+      this.setState({
+        startTime: null,
+        endTime: null,
+        time: 0,
+        isOn: false
+      });
 
     resetTimer = () => {
       this.setState({
@@ -61,27 +65,29 @@ export default function withTimer(WrappedComponent) {
     };
 
     render() {
-      const {
-        startTime, endTime, isOn, time
-      } = this.state;
+      const { startTime, endTime, isOn, time } = this.state;
 
-
-      const startTimeFormatted = startTime ? moment(startTime).format('LTS') : null;
-      const endTimeFormatted = endTime ? moment(endTime).format('LTS') : null;
+      const startTimeFormatted = startTime
+        ? moment(startTime).format("LTS")
+        : null;
+      const endTimeFormatted = endTime ? moment(endTime).format("LTS") : null;
 
       const isDisabled = time !== 0 && isOn == true;
       const start = (
-        <Button
-          onClick={this.startTimer}
-          color="success"
-          disabled={isDisabled}
-        >
-          {time === 0 ? 'Start' : 'Resume'}
+        <Button onClick={this.startTimer} color="success" disabled={isDisabled}>
+          {time === 0 ? "Start" : "Resume"}
         </Button>
       );
-      const stop = (time === 0 || !isOn)
-        ? <Button onClick={this.resetTimer} color="danger">Reset</Button>
-        : <Button onClick={this.stopTimer} color="danger">Stop</Button>;
+      const stop =
+        time === 0 || !isOn ? (
+          <Button onClick={this.resetTimer} color="danger">
+            Reset
+          </Button>
+        ) : (
+          <Button onClick={this.stopTimer} color="danger">
+            Stop
+          </Button>
+        );
 
       const { hours, minutes, seconds } = parseMs(time);
 
@@ -89,22 +95,14 @@ export default function withTimer(WrappedComponent) {
         <Layout>
           <div className="timer">
             <div>
-              {startTimeFormatted}
-              {' '}
-              <br />
+              {startTimeFormatted} <br />
               {start}
             </div>
             <div className="countdown">
-              {parseTimer(hours)}
-:
-              {parseTimer(minutes)}
-:
-              {parseTimer(seconds)}
+              {parseTimer(hours)}:{parseTimer(minutes)}:{parseTimer(seconds)}
             </div>
             <div>
-              {endTimeFormatted}
-              {' '}
-              <br />
+              {endTimeFormatted} <br />
               {stop}
             </div>
           </div>

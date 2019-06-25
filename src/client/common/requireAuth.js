@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component } from "react";
+import { connect } from "react-redux";
 
-export default (ChildComponent) => {
+export default ChildComponent => {
   class ComposedComponent extends Component {
     componentDidMount() {
       this.logOut();
@@ -13,7 +13,7 @@ export default (ChildComponent) => {
 
     logOut() {
       if (this.props.auth) {
-        this.props.history.push('/');
+        this.props.history.push("/");
       }
     }
 

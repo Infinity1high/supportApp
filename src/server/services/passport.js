@@ -1,13 +1,13 @@
-const passport = require('passport');
-const LocalStrategy = require('passport-local');
-const { Strategy } = require('passport-jwt');
-const { ExtractJwt } = require('passport-jwt');
+const passport = require("passport");
+const LocalStrategy = require("passport-local");
+const { Strategy } = require("passport-jwt");
+const { ExtractJwt } = require("passport-jwt");
 
-const User = require('../models/user');
+const User = require("../models/user");
 
-const config = require('../config');
+const config = require("../config");
 
-const localOptions = { usernameField: 'email' };
+const localOptions = { usernameField: "email" };
 const localLogin = new LocalStrategy(localOptions, (email, password, done) => {
   User.findOne({ email }, (err, user) => {
     if (err) {
@@ -23,14 +23,14 @@ const localLogin = new LocalStrategy(localOptions, (email, password, done) => {
       if (!isMatch) {
         return done(null, false);
       }
-      console.log('passowrd match');
+      console.log("passowrd match");
       return done(null, user);
     });
   });
 });
 
 const jwtOptions = {
-  jwtFromRequest: ExtractJwt.fromHeader('authorization'),
+  jwtFromRequest: ExtractJwt.fromHeader("authorization"),
   secretOrKey: config.secret
 };
 
