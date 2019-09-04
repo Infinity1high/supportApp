@@ -17,13 +17,7 @@ class callRepository {
 
   static editCall(req, res, next) {
     const data = req.body;
-
-    // const call = new Call(data);
-    // call.save(err => {
-    //   if (err) {
-    //     return next(err);
-    //   }
-    // });
+    Call.findOne({ _id: req.body.id }).update(data);
   }
 
   static getCalls(req, res) {
@@ -33,11 +27,12 @@ class callRepository {
         .catch(err => res.send(err));
     } else {
       const page = req.query && req.query.page && req.query.page * 20 - 20;
-      Call.find({})
+      const search = req.query.qs ? {"username" : new RegExp(req.query.qs, 'i') } : {}
+      Call.find(search)
         .limit(20)
         .skip(page || 0)
         .then(async documents => {
-          const totalItems = await Call.count({});
+          const totalItems = await Call.count(search);
           res.send({ list: documents, totalItems });
         })
         .catch(err => res.send(err));

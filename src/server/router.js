@@ -9,14 +9,14 @@ const requireSignin = passport.authenticate("local", { session: false });
 
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
-module.exports = function(app) {
-  app.get("/", requireAuth, (req, res) => {
-    console.log("init route");
-    res.send({ hi: "there" });
+module.exports = function (app) {
+  app.get('/', requireAuth, (req, res) => {
+    console.log('init route');
+    res.send({ hi: 'there' });
   });
-  app.post("/signin", requireSignin, Authentication.signin);
-  app.post("/signup", urlencodedParser, Authentication.signup);
-  app.post("/call_add", urlencodedParser, callRepository.addCall);
-  app.get("/calls", callRepository.getCalls);
-  app.delete("/calls", callRepository.removeCall);
+  app.post('/signin', requireSignin, Authentication.signin);
+  app.post('/signup', urlencodedParser, Authentication.signup);
+  app.post('/call_add', urlencodedParser, callRepository.addCall);
+  app.get('/calls', callRepository.getCalls);
+  //app.delete('/calls', callRepository.removeCall);
 };

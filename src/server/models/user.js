@@ -30,12 +30,6 @@ const userSchema = new Schema({
     type: String,
     trim: true
   },
-  calls: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: "callDetails"
-    }
-  ]
 });
 
 userSchema.pre("save", function(next) {

@@ -15,7 +15,8 @@ export function saveCall(
     email,
     comment,
     language,
-    time
+    time,
+      client_type
   },
   callback
 ) {
@@ -26,11 +27,11 @@ export function saveCall(
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        client_type: "",
+        client_type,
         time_start: timeStart,
         time_end: timeEnd,
         time_duration: time,
-        operator: "507f1f77bcf86cd799439011",
+        operator: "Diana",
         department: "Support",
         session_code: "",
         customer_id: customerId,
